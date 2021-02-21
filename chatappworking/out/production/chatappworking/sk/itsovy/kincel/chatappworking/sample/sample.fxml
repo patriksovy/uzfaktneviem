@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.kosickaakademia.mizak.chatapp.sample.Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4af7bb8c" height="300.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+        <Label layoutX="69.0" layoutY="64.0" text="Login : ">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="61.0" layoutY="128.0" text="Password : ">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txt_login" layoutX="189.0" layoutY="63.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btn_login" layoutX="199.0" layoutY="185.0" mnemonicParsing="false" onAction="#btn_click" prefHeight="23.0" prefWidth="102.0" text="Login">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="txt_password" layoutX="189.0" layoutY="131.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </PasswordField>
+        <Label fx:id="lbl_error" layoutX="171.0" layoutY="247.0" prefHeight="23.0" prefWidth="133.0" text="Incorrect credentials !" textFill="#dd0808" visible="false">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>
